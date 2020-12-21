@@ -15,7 +15,7 @@ export class MainPageComponent implements OnDestroy, OnInit {
   facebook = faSchool;
   private _mobileQueryListener: () => void;
   name: any;
-
+  selectedNav: string = 'home';
   constructor(
     changeDetectorRef: ChangeDetectorRef,
      media: MediaMatcher,
@@ -39,6 +39,7 @@ export class MainPageComponent implements OnDestroy, OnInit {
   }
 
   public navigate(destination: string): void {
+    this.selectedNav = destination;
     this.router.navigate(['about-us'], {relativeTo: this.route});
   }
 

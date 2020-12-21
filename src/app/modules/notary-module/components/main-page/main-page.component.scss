@@ -70,4 +70,10 @@ h1.example-app-name {
 
 .mat-list-base .mat-list-item:hover {
   color: #1e5787;
+  background-color: rgb(221, 221, 221);
+}
+
+.selected {
+  color: #1e5787;
+  background-color: rgb(221, 221, 221) !important;
 }
